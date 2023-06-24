@@ -5,7 +5,7 @@ The Travel Customer Churn Prediction model is a powerful tool built using Logist
 
 
 
-Logistic Regression is a well-known statistical algorithm that is widely used for binary classification problems. In this model, it analyzes the relationship between the dependent variable (churn) and the independent variables (customer attributes) to estimate the probability of churn. It considers factors such as age, travel preferences, flying history, and other relevant metrics to make predictions.
+Logistic Regression is a well-known statistical algorithm that is widely used for binary classification problems. This model analyzes the relationship between the dependent variable (churn) and the independent variables (customer attributes) to estimate the probability of churn. It considers factors such as age, travel preferences, flying history, and other relevant metrics to make predictions.
 
 
 
@@ -27,3 +27,12 @@ Here are some images of our model:
 ![image](https://github.com/tirtha1/Travel-Customer-Churn-Prediction-Analysis/assets/37182361/37c24806-85f6-43f0-9776-6693abf50420)
 
 
+# Main results summary:
+
+The key indicators of customer churn were age, frequent flyer status, and income class. Specifically, 
+
+ * younger customers (27-28y) tend to churn proportionally more often
+ * frequent flyers churn more than non-frequent flyers   
+ * high-income individuals churn more than low and middle-income classes  
+
+Of the compared models, the balanced bagging classifier performed best in order to predict customer churn. It performed with an overall accuracy of 90%, as well as an F1 score of 81 and other performance metrics >70 for the minority class. Given that it may be most important to correctly identify those customers who churn, the priority is to predict the minority class correctly. Thus, using a classifier focusing on balancing the data set and therefore boosting performance to identify those customers who churn, so they can be the focus of measures to improve customer satisfaction.  
